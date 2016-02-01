@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/search_input"
+                android:textCursorDrawable="@drawable/blue_edittext_cursor"
+                android:background="@drawable/text_input_border"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="35dp"
+                android:hint="@string/search"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_gray"
+                android:textSize="18dp"/>
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/clear_search"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:textSize="22dp"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:layout_gravity="center_vertical|right"
+                android:text="@string/clear_icon"
+                android:textColor="@color/app_blue"/>
+        </FrameLayout>
+
+        <com.rey.material.widget.CheckBox
+            android:id="@+id/favorites_toggle"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/favorites_only"
+            android:textColor="@color/app_blue"
+            app:cbd_animDuration="250"
+            app:cbd_strokeColor="@color/app_blue"
+            app:cbd_tickColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/no_soundbites"
+            android:text="@string/no_soundbites"
+            android:textColor="@color/dark_gray"
+            android:textSize="15sp"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+
+        <ListView
+            android:id="@+id/soundbites"
+            android:soundEffectsEnabled="false"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

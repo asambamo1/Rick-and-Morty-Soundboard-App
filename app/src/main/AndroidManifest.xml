@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.smartlifedigital.rickandmortysoundboard" >
+
+    <application
+        android:allowBackup="true"
+        android:name="com.smartlifedigital.rickandmortysoundboard.Utils.MyApplication"
+        android:icon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.smartlifedigital.rickandmortysoundboard.Activities.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden"
+            android:label="@string/rmsb">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.smartlifedigital.rickandmortysoundboard.Activities.SettingsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/settings">
+        </activity>
+    </application>
+
+</manifest>

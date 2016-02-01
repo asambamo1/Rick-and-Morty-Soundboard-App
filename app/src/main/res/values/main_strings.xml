@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Rick and Morty Sound Board</string>
+    <string name="rmsb">Rick and Morty Sound Board</string>
+    <string name="settings">Settings</string>
+    <string name="silence">Silence</string>
+    <string name="search">Search</string>
+    <string name="favorites_only">Only show favorited soundbites</string>
+    <string name="no_soundbites">No Soundbites found matching your Query.</string>
+
+    <!-- Font Awesome icons -->
+    <string name="clear_icon">{fa-remove}</string>
+    <string name="star_icon">{fa-star}</string>
+
+    <string name="welcome">Welcome</string>
+    <string name="ask_for_help">Thank you for downloading Rick and Morty Soundboard! If you have any ideas on how to improve this app (soundbite suggestions, bug fixes, feature requests),
+        please use the send feedback option in the settings to tell me!
+    </string>
+</resources>
